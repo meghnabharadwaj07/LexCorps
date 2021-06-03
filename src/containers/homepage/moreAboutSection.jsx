@@ -83,7 +83,7 @@ export function MoreAboutSection(props) {
       </AboutContainer>
       <AboutFirstContainer><AboutText>
       So whether you are professional who would like a basic framework and would like flexibility
-          to midify according to your whim ,
+          to modify according to your whim ,
           or you’re just starting out and require an entire infrastructure, you are in the right place.
           </AboutText></AboutFirstContainer>
      
