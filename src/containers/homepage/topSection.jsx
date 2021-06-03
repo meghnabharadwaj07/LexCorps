@@ -8,6 +8,9 @@ import { DownArrow } from "../../components/downArrow";
 import { Logo } from "../../components/logo";
 import { Marginer } from "../../components/marginer";
 import { Navbar } from "../../components/navbar";
+import {Link}from "react-router-dom"
+
+
 
 const TopContainer = styled.div`
   width: 100%;
@@ -45,20 +48,31 @@ const DownArrowContainer = styled.div`
 export function TopSection(props) {
   const scrollToNextSection = () => {
     scroller.scrollTo("servicesSection", { smooth: true, duration: 1500 });
-  };
+  };   
+  const project = () => {
+    window.location.replace("/project");
+  };  
+
 
   return (
+    
     <Element name="topSection">
       <TopContainer>
         <BackgroundFilter>
+        
           <Navbar />
+          
           <Marginer direction="vertical" margin="8em" />
+         
           <Logo />
           <Marginer direction="vertical" margin="4em" />
-          <MotivationalText>Software Development</MotivationalText>
-          <MotivationalText>From the Best in the Industry</MotivationalText>
+          <MotivationalText>A one-step solution for all</MotivationalText>
+          <MotivationalText>e-commerce needs</MotivationalText>
           <Marginer direction="vertical" margin="2em" />
-          <Button>Start your Project</Button>
+          <Link to="/project">
+          <Button onClick ={project}>Start your Project</Button>
+          </Link>
+         
           <DownArrowContainer onClick={scrollToNextSection}>
             <DownArrow />
           </DownArrowContainer>

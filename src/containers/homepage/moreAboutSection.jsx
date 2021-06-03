@@ -24,6 +24,14 @@ const AboutContainer = styled.div`
     flex-direction: column-reverse;
   }
 `;
+const AboutFirstContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+
+  
+`;
 
 const AboutText = styled.p`
   font-size: 21px;
@@ -47,19 +55,38 @@ const AboutImg = styled.img`
 export function MoreAboutSection(props) {
   return (
     <MoreAboutContainer>
-      <SectionTitle>More About Beema</SectionTitle>
+      <SectionTitle>More About LexCorps</SectionTitle>
+      <AboutFirstContainer><AboutText>
+        The the objective of this project is to make a powerful technology that allows 
+        technical as well as non-technical user's to start an online e- commerce business
+         with a professional and functional web presence. {<br />}{<br />}
+          This technology aims to provide features and solutions that a customer would 
+          require to build a professional website intact with a payment portal as well
+           as testing abilities with true creative freedom. 
+          </AboutText></AboutFirstContainer>
+      
       <AboutContainer>
-        <AboutText>
-          Beema is about designing, building and deliverying best quality
-          software for your company. {<br />}
-          {<br />} We make sure that you get the best software inferstracture
-          and set of applications to ensure the best experience of your clients.{" "}
+        
+          <AboutText>
+           We have initially carried out a survey of relevant literature and 
+          related work on the broad spectrum of e-Business trying to examine not only the technical dimensions of the subject 
+          but also the business and the social aspects of a business.{<br />}
+          {<br />}The success and failure factors of e-Business is another issue 
+          that we have examined along with some cases where the  companies that managed to effectively
+          implement e-Business in their operations and others that did not. 
           {<br />}
-          {<br />} So wether you are handling thousands of payment transactions
-          or you’re just starting out, you are in the right place.
+          {<br />}With the help of this analysis ,we have built different components  have been created and different technologies have 
+           , keeping the requirements of user and business in mind.{" "}
+         
         </AboutText>
         <AboutImg src={AboutImgUrl} />
       </AboutContainer>
+      <AboutFirstContainer><AboutText>
+      So whether you are professional who would like a basic framework and would like flexibility
+          to midify according to your whim ,
+          or you’re just starting out and require an entire infrastructure, you are in the right place.
+          </AboutText></AboutFirstContainer>
+     
     </MoreAboutContainer>
   );
 }

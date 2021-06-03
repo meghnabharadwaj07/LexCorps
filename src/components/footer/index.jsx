@@ -110,8 +110,8 @@ export function Footer(props) {
       <Marginer direction="vertical" margin="5em" />
       <Logo small />
       <Marginer direction="vertical" margin="1em" />
-      <MotivationalText>Just say the magical word</MotivationalText>
-      <MotivationalText>and we will do the rest</MotivationalText>
+      <MotivationalText>Do not delay with going digital</MotivationalText>
+      <MotivationalText>We are here for you</MotivationalText>
       <Marginer direction="vertical" margin="1em" />
       <Button>Start your Project</Button>
       <Marginer direction="vertical" margin="5em" />
@@ -130,7 +130,7 @@ export function Footer(props) {
           </SocialIcon>
         </SocialContainer>
       </AccessibilityContainer>
-      <RightsReserved>&copy; 2020 Beema All rights reserved</RightsReserved>
+      <RightsReserved>&copy; 2020 LexCorps All rights reserved</RightsReserved>
     </FooterContainer>
   );
 }

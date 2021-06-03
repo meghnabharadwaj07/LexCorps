@@ -21,28 +21,29 @@ const ServicesContainer = styled(Element)`
 export function ServicesSection(props) {
   return (
     <ServicesContainer name="servicesSection">
-      <SectionTitle>Best Quality Software</SectionTitle>
+      <SectionTitle>One Click Solution</SectionTitle>
       <Marginer direction="vertical" margin="3em" />
       <OurSerivce
         title="Fully integrated services"
-        description="We build and deliver fully integrated webapps
-          with customized control panels that fit your 
-          compnay needs"
+        description="We provide six fully integrated e-commerce apps
+          with customizable flexibility that fit your 
+          company needs"
         imgUrl={Service1Img}
       />
       <OurSerivce
-        title="Mobile optimized"
-        description="We build and deliver fully integrated webapps
-          with customized control panels that fit your 
-          compnay needs"
+        title="Features covered"
+        description="The app would have already incorporated database backend, frontend,
+        routing capabilities as well as payment portal management already inbuilt
+         "
         imgUrl={Service2Img}
         isReversed
       />
       <OurSerivce
-        title="Quality is our priority"
-        description="We have teams of professional developers, designers
-        and managers that ensures delivering the best 
-        software quality for your company"
+        title="Performance is our priority"
+        description="You can choose your webapp according to the performance you wish 
+        to attain in your system. Saves you the budget of investing in features that are not 
+        required with the help of our comprehensive documentation
+        "
         imgUrl={Service3Img}
       />
     </ServicesContainer>

@@ -45,7 +45,7 @@ export function Logo(props) {
     <LogoContainer inline={inline} small={small}>
       <LogoImg src={BeemaLogo} inline={inline} small={small} />
       <LogoText inline={inline} small={small}>
-        Beema
+        LexCorps
       </LogoText>
     </LogoContainer>
   );

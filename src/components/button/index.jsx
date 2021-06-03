@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { theme } from "../../theme";
 
+
 const ButtonWrapper = styled.button`
   padding: ${({ small }) => (small ? "5px 8px" : "7px 15px")};
   border-radius: 5px;
@@ -21,5 +22,5 @@ const ButtonWrapper = styled.button`
 `;
 
 export function Button(props) {
-  return <ButtonWrapper {...props}>{props.children}</ButtonWrapper>;
+  return (<ButtonWrapper {...props}>{props.children}</ButtonWrapper>);
 }
